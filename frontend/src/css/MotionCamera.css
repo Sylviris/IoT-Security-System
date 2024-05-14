@@ -1,0 +1,5 @@
+.accordion-container {
+    display: grid;
+    justify-content: left;
+    align-items: center;
+}

@@ -1,0 +1,14 @@
+.accordion-container {
+    display: grid;
+    justify-content: left;
+    align-items: center;
+}
+.accordion-header {
+    background-color: black;
+}
+.info-container {
+    display: grid;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
