@@ -39,5 +39,4 @@ coverage
 Thumbs.db
 
 # Video files
-/videos/*
-!videos/.gitkeep  # If you want to keep the directory but ignore its contents
+videos/.gitkeep  # If you want to keep the directory but ignore its contents
