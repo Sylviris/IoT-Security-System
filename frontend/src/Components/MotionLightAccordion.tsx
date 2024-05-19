@@ -2,7 +2,8 @@ import MotionLightControl from "./ColorSelector";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Accordion } from "react-bootstrap";
 import { RGBColor } from "react-color";
-import "C:/Users/msoar/Smart Home/frontend/src/css/MotionLight.css";
+import "../styles/MotionLight.css";
+
 
 type MotionAccordionProps = {
   onChange: (color: RGBColor) => void;

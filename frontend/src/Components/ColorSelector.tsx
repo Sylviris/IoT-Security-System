@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { SketchPicker, RGBColor, ColorResult } from "react-color";
-import "C:/Users/msoar/Smart Home/frontend/src/css/MotionLight.css";
+import "../styles/MotionLight.css";
 
 type MotionLightProps = {
   onChange: (color: RGBColor) => void;

@@ -10,7 +10,8 @@ const VideoPlayer: React.FC = () => {
     const fetchVideos = async () => {
       try {
         const response = await axios.get<string[]>("/api/videos");
-        setVideos(response.data);
+        const mp4Files = response.data.filter(files => files.endsWith(".mp4"));
+        setVideos(mp4Files);
       } catch (error) {
         console.error("Error fetching videos:", error);
       }
