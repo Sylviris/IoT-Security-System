@@ -1,7 +1,7 @@
 import VideoPlayer from "./VideoPlayer";
-import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Accordion } from "react-bootstrap";
-import "../styles/MotionCamera.css"
+import "../styles/MotionCamera.css";
 
 const MotionCameraAccordion = () => {
   return (

@@ -1,12 +1,13 @@
-import * as React from "react";
-import { ListGroup, Container, Row, Col, Alert } from "react-bootstrap";
-import axios from "axios";
+import React, { useState, useEffect } from 'react';
+import { Container, Row, Col, ListGroup, Alert } from 'react-bootstrap';
+import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const VideoPlayer: React.FC = () => {
-  const [videos, setVideos] = React.useState<string[]>([]);
-  const [selectedVideo, setSelectedVideo] = React.useState<string>();
+  const [videos, setVideos] = useState<string[]>([]);
+  const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const fetchVideos = async () => {
       try {
         const response = await axios.get<string[]>("/api/videos");
