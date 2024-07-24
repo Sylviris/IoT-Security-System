@@ -49,3 +49,4 @@ This project is a smart home automation system involving a motion-detecting ligh
 
 - Implement real-time video streaming.
 - Enhance security with multi-factor authentication.
+- Clean up and improve UI
